@@ -1,5 +1,7 @@
 # DatAble - Data Able Source
 
+![Logo](src/images/logo.PNG)
+
 DataAble - веб-сервіс для реалізації повного життєвого циклу даних.
 
 ## Учасники проекту
