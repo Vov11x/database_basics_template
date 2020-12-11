@@ -1,0 +1,26 @@
+{
+  "name": "DatAble",
+  "version": "1.0.0",
+  "description": "DataAble - веб-сервіс для реалізації повного життєвого циклу даних.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cli-table3": "^0.6.0",
+    "lodash-node": "^3.10.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vov11x/DatAble"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "IO-93 DatAble devs"
+  },
+  "homepage": "https://github.com/Vov11x/DatAble#readme"
+}
