@@ -8,6 +8,7 @@ User.init(
         id: {
             type: Sequilize.INTEGER,
             field: 'id',
+            primaryKey: true,
             allowNull: false
         },
         nickname: {

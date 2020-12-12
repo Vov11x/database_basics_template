@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const mysql = require('mysql2');
 
-const sqlScript = fs.readFileSync(path.join(__dirname, '../../src/sql/ddl.sql')).toString();
+const sqlScript = fs.readFileSync(path.join(__dirname, '../../src/sql/main.sql')).toString();
 
 const connection = mysql.connect({
     host: dbConfig.DATABASE_HOST,
