@@ -1,0 +1,39 @@
+{
+    "name": "mydb",
+    "version": "1.0.0",
+    "description": "DataAble - веб-сервіс для реалізації повного життєвого циклу даних.",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs",
+        "test": "tests"
+    },
+    "scripts": {
+        "test-db": "node ./tests/db",
+        "build-db": "node ./tests/build",
+        "test-app": "node ./tests/app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vov11x/DatAble"
+    },
+    "keywords": [
+        "kanban",
+        "scrum",
+        "agile",
+        "projects",
+        "managing"
+    ],
+    "author": "IO-93 2nd Team",
+    "license": "ISC",
+    "homepage": "https://github.com/Vov11x/DatAble#readme",
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "cli-table3": "^0.6.0",
+        "fs": "^0.0.1-security",
+        "lodash-node": "^3.10.2",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.2.5",
+        "path": "^0.12.7",
+        "sequelize": "^6.3.5"
+    }
+}
