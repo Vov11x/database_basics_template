@@ -5,7 +5,16 @@ const Model = Sequilize.Model;
 class User extends Model {}
 User.init(
     {
-        name: {
+        id: {
+            type: Sequilize.INTEGER,
+            field: 'id',
+            allowNull: false
+        },
+        nickname: {
+            type: Sequilize.STRING,
+            allowNull: false
+        },
+        password: {
             type: Sequilize.STRING,
             allowNull: false
         },
@@ -13,7 +22,7 @@ User.init(
             type: Sequilize.STRING,
             allowNull: false
         },
-        nickname: {
+        role: {
             type: Sequilize.STRING,
             allowNull: false
         }

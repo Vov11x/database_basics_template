@@ -1,22 +1,22 @@
 const connection = require('../connection');
 const Sequilize = require('sequelize');
 const User = require('./user').User;
-const Project = require('./project').Project;
+const Dataverse = require('./dataverse').Dataverse;
 
 const Model = Sequilize.Model;
 
-class ProjectUser extends Model {}
-ProjectUser.init(
+class DataverseUser extends Model {}
+DataverseUser.init(
     {
-        project_id: {
+        Dataverse_id: {
             type: Sequilize.INTEGER,
             allowNull: false,
             references: {
-                model: Project,
+                model: Dataverse,
                 key: 'id'
             }
         },
-        user_id: {
+        User_id: {
             type: Sequilize.INTEGER,
             allowNull: false,
             references: {
@@ -27,23 +27,23 @@ ProjectUser.init(
     },
     {
         sequelize: connection,
-        tableName: 'project_user'
+        tableName: 'Access'
     }
 );
 
-Project.belongsToMany(User, {
-    through: 'project_user',
+Dataverse.belongsToMany(User, {
+    through: 'Access',
     timestamps: false,
-    foreignKey: 'project_id'
+    foreignKey: 'Dataverse_id'
 });
-User.belongsToMany(Project, {
-    through: 'project_user',
+User.belongsToMany(Dataverse, {
+    through: 'Access',
     timestamps: false,
-    foreignKey: 'user_id'
+    foreignKey: 'User_id'
 });
 
 
 module.exports = {
     User,
-    Project
+    Dataverse
 };
